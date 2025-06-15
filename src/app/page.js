@@ -233,11 +233,13 @@ export default function Home() {
           <Link className="murdocB" href="#listen" onClick={() => setShowMurdoc(true)}>
             <img className="activate" src="/Image/button murdoc.png" alt="" />
           </Link>
-          {showMurdoc && (
+          
+        </div>
+        {showMurdoc && (
           <Murdoc onClose={() => setShowMurdoc(false)} />
         )}
-        </div>
       </section>
+      
     </div>
   );
 }

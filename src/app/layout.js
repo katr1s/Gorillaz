@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
         {/* Open Graph */}
         <meta property="og:title" content="Gorillaz Concept Website" />
         <meta property="og:description" content="Fan Concept: A Tribute to Gorillaz" />
-        <meta property="og:image" content="/SEO.gif" />
+        <meta property="og:image" content="https://github.com/katr1s/Gorillaz/blob/master/public/SEO.gif?raw=true" />
         <meta property="og:url" content="https://gorillaz-five.vercel.app/" />
         <meta property="og:type" content="website" />
 
@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Gorillaz Concept Website" />
         <meta name="twitter:description" content="Fan Concept: A Tribute to Gorillaz" />
-        <meta name="twitter:image" content="/SEO.gif" />
+        <meta name="twitter:image" content="https://github.com/katr1s/Gorillaz/blob/master/public/SEO.gif?raw=true" />
       </Head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}

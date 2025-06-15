@@ -69,7 +69,10 @@ export function Murdoc({ onClose }) {
 
         <audio src="/sound/murdoc.mp3" controls autoPlay></audio>
       </div>
+      <div className="close">
       <button onClick={onClose}>X</button>
+
+      </div>
     </div>
   );
 }

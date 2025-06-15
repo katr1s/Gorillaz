@@ -512,8 +512,17 @@ nav .youtube {
   position: absolute;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   background-color: var(--background);
+
+  .close{
+    z-index: 11;
+    width: 2%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
 
   button {
     z-index: 11;
