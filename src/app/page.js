@@ -28,18 +28,18 @@ export default function Home() {
           </Link>
 
           <div className="sections">
-            <a href="#listen">Listen</a>
-            <a href="#history">History</a>
-            <a href="#videos">Videos</a>
+            <Link href="#listen">Listen</Link>
+            <Link href="#history">History</Link>
+            <Link href="#videos">Videos</Link>
           </div>
 
           <div className="youtube">
-            <a
+            <Link
               href="https://www.youtube.com/channel/UCfIXdjDQH9Fau7y99_Orpjw"
               target="_blank"
             >
               Subcribe
-            </a>
+            </Link>
           </div>
         </nav>
 
@@ -57,7 +57,7 @@ export default function Home() {
             <div className="character circle">
               <img src="Image/2d.png" alt="2D" title="2D" loading="lazy" />
             </div>
-            <a
+            <Link
               href="https://gorillaz.lnk.to/crackerislandlistenandbuy"
               target="_blank"
               className="character album"
@@ -71,7 +71,7 @@ export default function Home() {
                 title="Cracker Island"
                 loading="lazy"
               />
-            </a>
+            </Link>
             <div className="character circle">
               <img
                 src="Image/noddle.png"
@@ -92,7 +92,7 @@ export default function Home() {
         </div>
 
         <footer>
-          <a
+          <Link
             href="https://www.youtube.com/watch?v=WXR-bCF5dbM"
             target="_blank"
             className="card"
@@ -102,9 +102,9 @@ export default function Home() {
               <h6>19-200</h6>
               <p>Gorillaz</p>
             </div>
-          </a>
+          </Link>
 
-          <a href="#listen" className="listen">
+          <Link href="#listen" className="listen">
             <img
               className="image-1"
               src="Image/gorillaz.jpg"
@@ -118,7 +118,7 @@ export default function Home() {
               loading="lazy"
             />
             <div className="circle">+</div>
-          </a>
+          </Link>
         </footer>
       </section>
 
@@ -230,9 +230,9 @@ export default function Home() {
         <h2>Listen</h2>
         <div className="play">
           <GlideSlider />
-          <a className="murdocB" href="#listen" onClick={() => setShowMurdoc(true)}>
+          <Link className="murdocB" href="#listen" onClick={() => setShowMurdoc(true)}>
             <img className="activate" src="/Image/button murdoc.png" alt="" />
-          </a>
+          </Link>
           {showMurdoc && (
           <Murdoc onClose={() => setShowMurdoc(false)} />
         )}
