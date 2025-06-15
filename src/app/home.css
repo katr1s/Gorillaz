@@ -393,8 +393,9 @@ nav .youtube {
 }
 
 #listen .play {
-  width: 98%;
+  width: 100%;
   height: 98%;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -725,6 +726,10 @@ body.no-scroll {
 
   #listen h2{
     font-size: 5rem;
+  }
+
+  #listen .background{
+    display: none;
   }
 }
 
