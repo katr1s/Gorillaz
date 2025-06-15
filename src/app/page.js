@@ -15,7 +15,7 @@ export default function Home() {
   }, [showMurdoc]);
 
   return (
-    <>
+    <div className="wrapper">
           <section className="hero">
         <nav className="navigation">
           <Link href="/" className="logo">
@@ -238,6 +238,6 @@ export default function Home() {
         )}
         </div>
       </section>
-    </>
+    </div>
   );
 }
