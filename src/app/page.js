@@ -3,6 +3,7 @@ import GlideSlider from "@/Components/glide";
 import "./home.css";
 import { Murdoc } from "@/Components/murdoc";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -17,14 +18,14 @@ export default function Home() {
     <>
           <section className="hero">
         <nav className="navigation">
-          <a href="/" className="logo">
+          <Link href="/" className="logo">
             <img
               src="Image/logo.png"
               alt="Gorillaz"
               title="Gorillaz"
               loading="lazy"
             />
-          </a>
+          </Link>
 
           <div className="sections">
             <a href="#listen">Listen</a>
