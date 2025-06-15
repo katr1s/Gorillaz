@@ -207,120 +207,6 @@ nav .youtube {
   z-index: 1;
 }
 
-.history {
-  width: 98%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-
-  .box-1 {
-    width: 98%;
-    height: 45%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    article {
-      width: 48%;
-      height: 98%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
-
-      h2 {
-        font-size: 5rem;
-        font-weight: 600;
-      }
-
-      h3 {
-        font-size: 3rem;
-        font-weight: 600;
-      }
-
-      p {
-        font-size: 1.1rem;
-      }
-    }
-
-    .character-1 {
-      flex-direction: row;
-      gap: 10px;
-      justify-content: center;
-      align-items: center;
-
-      .inf {
-        height: 60px;
-        overflow-y: hidden;
-        transition: height 0.5s;
-        interpolate-size: allow-keywords;
-
-        h3 {
-          font-size: 4rem;
-          font-weight: 600;
-        }
-      }
-    }
-
-    .character-1:hover {
-      .inf {
-        height: auto;
-
-        h3 {
-          font-size: 3rem;
-          font-weight: 600;
-        }
-      }
-    }
-  }
-
-  img {
-    width: 40%;
-    border-radius: 12px;
-  }
-
-  .box-2 {
-    width: 98%;
-    height: 48%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .character {
-      width: 32%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-
-      .inf {
-        height: 50px;
-        overflow-y: hidden;
-        transition: height 0.5s;
-        interpolate-size: allow-keywords;
-
-        h3 {
-          font-size: 3rem;
-        }
-      }
-    }
-
-    .character:hover {
-      .inf {
-        height: auto;
-      }
-
-      h3 {
-        font-size: 2rem;
-      }
-    }
-  }
-}
-
 .background {
   width: 100vw;
   height: 100%;
@@ -361,6 +247,120 @@ nav .youtube {
   opacity: 0.5;
   filter: blur(50px);
 }
+
+.history {
+  width: 98%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.history .box-1 {
+  width: 98%;
+  height: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.history .box-1 article {
+  width: 48%;
+  height: 98%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.history .box-1 article h2 {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.history .box-1 article h3 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.history .box-1 article p {
+  font-size: 1.1rem;
+}
+
+.history .box-1 .character-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.history .box-1 .character-1 .inf {
+  height: 60px;
+  overflow-y: hidden;
+  transition: height 0.5s;
+  interpolate-size: allow-keywords;
+}
+
+.history .box-1 .character-1 .inf h3 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.history .box-1 .character-1:hover .inf {
+  height: auto;
+}
+
+.history .box-1 .character-1:hover .inf h3 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.history img {
+  width: 40%;
+  border-radius: 12px;
+}
+
+.history .box-2 {
+  width: 98%;
+  height: 48%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.history .box-2 .character {
+  width: 32%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.history .box-2 .character .inf {
+  height: 50px;
+  overflow-y: hidden;
+  transition: height 0.5s;
+  interpolate-size: allow-keywords;
+}
+
+.history .box-2 .character .inf h3 {
+  font-size: 3rem;
+}
+
+.history .box-2 .character:hover .inf {
+  height: auto;
+}
+
+.history .box-2 .character:hover h3 {
+  font-size: 2rem;
+}
+
+
+
 
 #listen {
   width: 98%;
@@ -410,7 +410,7 @@ nav .youtube {
       filter: drop-shadow(0 0 0 20px var(--background));
       position: absolute;
       margin: auto;
-      transform: translate(100px, 173px);
+      transform: translate(160px, 213px);
     }
 
     .banner {
@@ -666,11 +666,59 @@ body.no-scroll {
     width: 130px;
     height: 130px;
   }
+
+  .history{
+    height: auto;
+  }
+
+  .history .box-1, .history .box-2{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .history .box-1 article, .history .box-2 article{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .history .box-1 article p, .history .box-2 article p{
+    width: 450px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .history .box-1 .character-1{
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .history .box-1 .character-1 .inf, .history .box-2 .character-2 .inf, .history .box-2 .character-3 .inf, .history .box-2 .character-4 .inf{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 70px;
+  }
+
+  .history .box-1 .character-1 .inf h3, .history .box-2 .character-2 .inf h3, .history .box-2 .character-3 .inf h3, .history .box-2 .character-4 .inf h3{
+    font-size: 4rem;
+  }
+
+  .history .box-1 .character-1 img, .history .box-2 .character-2 img, .history .box-2 .character-3 img, .history .box-2 .character-4 img{
+    width: 250px;
+  }
+
+  .history .box-1 .character-1:hover .inf h3{
+    font-size: 4rem;
+  }
 }
 
 @media (max-width: 500px) {
   .hero{
-    height: 700px;
+    height: 800px;
     margin-bottom: 40px;
   }
 
@@ -735,5 +783,11 @@ body.no-scroll {
   .hero .content .characters .character {
     width: 130px;
     height: 130px;
+  }
+
+  .history .box-1 article p, .history .box-2 article p{
+    width: 300px;
+    font-size: 1.5rem;
+    text-align: center;
   }
 }

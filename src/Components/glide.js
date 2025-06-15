@@ -57,7 +57,7 @@ const GlideSlider = () => {
           </Link>
 
           <Link href="https://gorillaz.lnk.to/thefalllistenandbuy" target="_blank" className="item" style={{ "--position": 7 }}>
-            <img src="/Image/The fall.jpg" alt=""  />
+            <img src="/Image/The Fall.jpg" alt=""  />
             <div className="inf">
               <h3>The fall</h3>
               <h5>2010</h5>

@@ -137,7 +137,7 @@ export default function Home() {
           </article>
           <article className="character-1">
             <img
-              src="/Character/2-d.webp"
+              src="/Character/2-D.webp"
               alt="2-D"
               title="2-D"
               loading="lazy"
