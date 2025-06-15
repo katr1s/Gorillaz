@@ -380,132 +380,128 @@ nav .youtube {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-
-  h2 {
-    font-size: 2rem;
-    width: 98%;
-    display: flex;
-    justify-content: flex-start;
-    transform: translateY(40px);
-    align-items: center;
-  }
-
-  .play {
-    width: 98%;
-    height: 98%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: none;
-
-    .murdocB {
-      z-index: 11;
-      cursor: pointer;
-    }
-
-    .murdocB {
-      width: auto;
-      height: auto;
-      background-color: transparent;
-      border: transparent;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      cursor: pointer;
-    }
-
-    .activate {
-      width: 250px;
-      user-select: none;
-      filter: drop-shadow(0 0 0 20px var(--background));
-      position: absolute;
-      margin: auto;
-      transform: translate(160px, 213px);
-    }
-
-    .banner {
-      width: 50%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      position: relative;
-
-      .noodle {
-        width: 1050px;
-        z-index: 2;
-        transform: translate(50px, 35%);
-      }
-    }
-    .banner .slider {
-      position: absolute;
-      margin: auto;
-      width: 150px;
-      height: 200px;
-      display: flex;
-      top: 20%;
-      transform-style: preserve-3d;
-      transform: perspective(1000px);
-      animation: autoRun 40s linear infinite;
-      z-index: 4;
-    }
-
-    .banner .slider .item {
-      width: 150px;
-      height: 200px;
-      position: absolute;
-      inset: 0 0 0 0;
-      transform: rotateY(
-          calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
-        )
-        translateZ(400px);
-
-      .inf {
-        width: 150px;
-        height: 151px;
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transform: translateY(-180px);
-        z-index: 6;
-
-        h3 {
-          font-size: 1rem;
-          color: transparent;
-        }
-
-        h5 {
-          font-size: 0.8rem;
-          color: transparent;
-        }
-      }
-    }
-
-    .banner .slider .item:hover {
-      transition: 2s ease-in;
-      .inf {
-        background-color: var(--background);
-        opacity: 0.8;
-
-        h3,
-        h5 {
-          color: var(--foreground);
-          opacity: 1.5;
-        }
-      }
-    }
-
-    .banner .slider .item img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      user-select: none;
-    }
-  }
 }
+
+#listen h2 {
+  font-size: 2rem;
+  width: 98%;
+  display: flex;
+  justify-content: flex-start;
+  transform: translateY(40px);
+  align-items: center;
+}
+
+#listen .play {
+  width: 98%;
+  height: 98%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Cambié "none" por "hidden" porque "none" no es válido */
+}
+
+#listen .play .murdocB {
+  z-index: 11;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  border: transparent;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+#listen .play .activate {
+  width: 250px;
+  user-select: none;
+  filter: drop-shadow(0 0 0 20px var(--background));
+  position: absolute;
+  margin: auto;
+  transform: translate(160px, 213px);
+}
+
+#listen .play .banner {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+#listen .play .banner .noodle {
+  width: 1050px;
+  z-index: 2;
+  transform: translate(50px, 35%);
+}
+
+#listen .play .banner .slider {
+  position: absolute;
+  margin: auto;
+  width: 150px;
+  height: 200px;
+  display: flex;
+  top: 20%;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: autoRun 40s linear infinite;
+  z-index: 4;
+}
+
+#listen .play .banner .slider .item {
+  width: 150px;
+  height: 200px;
+  position: absolute;
+  inset: 0 0 0 0;
+  transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(400px);
+}
+
+#listen .play .banner .slider .item .inf {
+  width: 150px;
+  height: 151px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-180px);
+  z-index: 6;
+}
+
+#listen .play .banner .slider .item .inf h3 {
+  font-size: 1rem;
+  color: transparent;
+}
+
+#listen .play .banner .slider .item .inf h5 {
+  font-size: 0.8rem;
+  color: transparent;
+}
+
+#listen .play .banner .slider .item:hover {
+  transition: 2s ease-in;
+}
+
+#listen .play .banner .slider .item:hover .inf {
+  background-color: var(--background);
+  opacity: 0.8;
+}
+
+#listen .play .banner .slider .item:hover .inf h3,
+#listen .play .banner .slider .item:hover .inf h5 {
+  color: var(--foreground);
+  opacity: 1.5;
+}
+
+#listen .play .banner .slider .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  user-select: none;
+}
+
 
 .murdocH {
   width: 100vw;
@@ -801,7 +797,7 @@ body.no-scroll {
     text-align: center;
   }
 
-  #listen .murdocB{
+  #listen .play .murdocB{
     display: none;
   }
 }
