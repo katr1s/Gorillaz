@@ -195,7 +195,7 @@ export default function Home() {
           </article>
           <article className="character character-4">
             <img
-              src="/Character/russel.webp"
+              src="/Character/Russel.webp"
               alt="Russel Hobbs"
               title="Russel Hobbs"
               loading="lazy"
