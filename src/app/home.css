@@ -1,6 +1,11 @@
 .wrapper{
   overflow-x: hidden;
-  width: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
 nav {
@@ -794,5 +799,9 @@ body.no-scroll {
     width: 300px;
     font-size: 1.5rem;
     text-align: center;
+  }
+
+  #listen .murdocB{
+    display: none;
   }
 }
