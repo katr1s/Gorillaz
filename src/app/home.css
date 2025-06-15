@@ -670,6 +670,7 @@ body.no-scroll {
 
 @media (max-width: 500px) {
   .hero{
+    height: 700px;
     margin-bottom: 40px;
   }
 
@@ -705,11 +706,21 @@ body.no-scroll {
     
   }
   .hero .content h1 {
-    font-size: 4rem;
+    font-size: 0rem;
+    display: none;
   }
 
   .hero .content .characters {
-    transform: translateY(16px);
+    transform: translateY(0);
+    flex-wrap: wrap;
+    width: 400px;
+    height: 98%;
+  }
+
+  .hero .content .characters .album{
+    width: 250px;
+    height: 250px;
+    margin: 0 100px;
   }
 
   .hero .content .characters .album .icon{
@@ -722,7 +733,7 @@ body.no-scroll {
   }
 
   .hero .content .characters .character {
-    width: 50px;
-    height: 50px;
+    width: 130px;
+    height: 130px;
   }
 }
