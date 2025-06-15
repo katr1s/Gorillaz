@@ -219,7 +219,7 @@ nav .youtube {
 
 .background {
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -227,26 +227,27 @@ nav .youtube {
   overflow: hidden;
   z-index: -1;
   gap: 50px;
-
-  .circle {
-    width: 250px;
-    height: 250px;
-    border-radius: 100%;
-    border: 4px solid var(--green);
-  }
-
-  .circle-1 {
-    transform: translate(-400px, 80px);
-  }
-
-  .circle-2 {
-    transform: translate(0px, -150px);
-  }
-
-  .circle-3 {
-    transform: translate(400px, 150px);
-  }
 }
+
+.background .circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  border: 4px solid var(--green);
+}
+
+.background .circle-1 {
+  transform: translate(-400px, 80px);
+}
+
+.background .circle-2 {
+  transform: translate(0px, -150px);
+}
+
+.background .circle-3 {
+  transform: translate(400px, 150px);
+}
+
 
 .background::after {
   content: "";
@@ -711,6 +712,7 @@ body.no-scroll {
 
   .history .box-1 .character-1 .inf h3, .history .box-2 .character-2 .inf h3, .history .box-2 .character-3 .inf h3, .history .box-2 .character-4 .inf h3{
     font-size: 4rem;
+    user-select: none;
   }
 
   .history .box-1 .character-1 img, .history .box-2 .character-2 img, .history .box-2 .character-3 img, .history .box-2 .character-4 img{
@@ -719,6 +721,10 @@ body.no-scroll {
 
   .history .box-1 .character-1:hover .inf h3{
     font-size: 4rem;
+  }
+
+  #listen h2{
+    font-size: 5rem;
   }
 }
 
@@ -798,6 +804,10 @@ body.no-scroll {
   }
 
   #listen .play .murdocB{
+    display: none;
+  }
+
+  .history .background, #listen .background{
     display: none;
   }
 }
