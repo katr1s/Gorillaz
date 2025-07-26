@@ -30,7 +30,6 @@ export default function Home() {
           <div className="sections">
             <Link href="#listen">Listen</Link>
             <Link href="#history">History</Link>
-            <Link href="#videos">Videos</Link>
           </div>
 
           <div className="youtube">
